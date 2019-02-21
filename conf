@@ -1,0 +1,50 @@
+CoQA_TRAIN_FILE	data/coqa-train-v1.0.json
+CoQA_DEV_FILE	data/coqa-dev-v1.0.json
+
+PREV_ANS	2
+PREV_QUES	2
+
+DROPOUT	0.3
+my_dropout_p	0.3
+VARIATIONAL_DROPOUT
+
+BERT
+BERT_LARGE
+dropout_emb	0.4
+
+LOCK_BERT
+BERT_LINEAR_COMBINE
+BERT_tokenizer_file     bert-base-cased/bert-base-cased-vocab.txt
+BERT_model_file bert-base-cased/
+BERT_large_tokenizer_file       bert-large-uncased/bert-large-uncased-vocab.txt
+BERT_large_model_file   bert-large-uncased/
+
+SEED	1033
+SPACY_FEATURE
+CONTEXT_RNN_HIDDEN_DIM	300
+
+MAX_WORD_PER_SENTENCE	30
+INIT_WORD_EMBEDDING_FILE	../glove/glove.840B.300d.txt
+MINI_BATCH	32
+EPOCH	30
+
+QUES_SELF_ATTN
+max_len	15
+concat_rnn	False
+grad_clipping	 10
+do_seq_dropout
+tune_partial	1000
+embedding_dim	300
+prealign_hidden	300
+flow_hidden_size 300
+query_self_attn_hidden_size	300
+pos_dim	12
+ent_dim	8
+hidden_size	125
+deep_att_hidden_size_per_abstr	250
+deep_inter_att_use_CoVe	1
+in_rnn_layers	2
+highlvl_hidden_size	125
+question_high_lvl_rnn_layers	1
+char_emb_size	8
+char_hidden_size	50
