@@ -30,6 +30,10 @@ Requirement: PyTorch 0.4.0, spaCy 2.0
 2. Create folder **coqa/data** to store CoQA raw data: **coqa-train-v1.0.json** and **coqa-dev-v1.0.json**;
 3. Copy the file **conf** from the repo into folder **coqa**;
 4. If you want to use BERT-Large, download their model into **coqa/bert-large-uncased**; if you want to use BERT-base, download their model into **coqa/bert-base-cased**;
+    * The models can be downloaded from Huggingface: 
+      * 'bert-base-uncased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz",
+      * 'bert-large-uncased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased.tar.gz"
+    * bert-large-uncased-vocab.txt can be downloaded from Google's BERT repository
 5. Create a folder **glove** in the same directory of **coqa** and download GloVe embedding **glove.840B.300d.txt** into the folder.
 
 Your directory should look like this:
