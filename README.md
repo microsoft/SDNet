@@ -25,7 +25,7 @@ For usage of this code, please follow [Microsoft Open Source Code of Conduct](ht
   * Timing.py: Logging time
 
 # How to run
-Requirement: PyTorch 0.4.0, spaCy 2.0.
+Requirement: PyTorch 0.4.1, spaCy 2.0.16.
 The docker we used is available at dockerhub: https://hub.docker.com/r/zcgzcgzcg/squadv2/tags. Please use v3.0 or v4.0.
 1. Create a folder (e.g. **coqa**) to contain data and running logs;
 2. Create folder **coqa/data** to store CoQA raw data: **coqa-train-v1.0.json** and **coqa-dev-v1.0.json**;
